@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Streaming</title>
+	<style>
+		body {
+			font-family: Helvetica, sans-serif; 
+			background-color: #F2F2F2;
+			margin-top: 0;
+			margin: 0; 
+		}
+		.container {
+			background-color: #FFFFFF; 
+			margin: 20px; 
+			padding: 20px; 
+            text-align: center;
+		}
+		.imageTI {
+			/* position: absolute; */
+			margin-top: 50px;
+			max-width: 200px;
+			height: auto;
+		}
+		.navbar {
+			display: flex;
+    		justify-content: space-between;
+			background-color: #fff;
+			height: 50px;
+			padding: 5px 20px;
+			align-items: center;
+
+		}
+		.imageContainer {
+    		text-align: right;
+  		}
+		.image {
+			display: inline-block;
+			margin-right: 10px;
+			max-width: 40px;
+			height: auto;
+  		}
+		.imageBruning {
+			float: left;
+			max-width: 110px;
+			height: auto;
+		}
+
+		.texto {
+			position: absolute;
+			margin-left: 200px;
+			margin-top: 12px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>IA - Detecção de Pessoas</h1>
+		<img src="{{ url_for('video_feed')}}">
+		<p>Aplicação de inteligência artificial para detectar pessoas em tempo real.</p>
+		<p>O algoritmo utilizado analisa continuamente as imagens capturadas pela câmera e sinaliza quando uma pessoa é detectada.</p>
+	</div>
+</body>
+</html>
